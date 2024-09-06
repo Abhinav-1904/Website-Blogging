@@ -22,7 +22,7 @@ export const Story=()=>{
                     <div className="flex justify-center flex-col pl-4 w-full">
                     <textarea
                             placeholder="Title"
-                            className="text-5xl font-normal font-serif text-gray-400 placeholder-gray-400 
+                            className="text-5xl font-normal font-serif text-black placeholder-gray-400 
                                         outline-none focus:ring-0 w-full resize-none overflow-hidden"
                             onFocus={() => setshowIcon(true)} // Show icon on focus
                             onBlur={() => setshowIcon(false)} // Hide icon on blur
@@ -47,7 +47,7 @@ export const Story=()=>{
                     <div className="flex justify-center flex-col w-full pl-6">
                         <textarea
                                 placeholder="Tell your story..."
-                                className="text-xl font-normal font-serif text-gray-400 placeholder-gray-400 
+                                className="text-xl font-normal font-serif text-black placeholder-gray-400 
                                 outline-none focus:ring-0 w-full resize-none overflow-hidden"
                                 onFocus={() => setshowIcon2(true)}
                                 onBlur={() => setshowIcon2(false)}

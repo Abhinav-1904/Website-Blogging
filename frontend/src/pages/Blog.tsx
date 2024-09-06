@@ -9,7 +9,6 @@ export const Blog =()=>{
     if(loading){
         return<div className="space-y-8">
             <BlogSkeleton />
-            <BlogSkeleton></BlogSkeleton>
         </div>
     }
     return <div>
