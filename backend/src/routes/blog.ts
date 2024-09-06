@@ -16,7 +16,7 @@ export const blogRouter = new Hono<{
 
 
 blogRouter.use('/*',async(c,next)=>{
-    const header=c.req.header("authorization") 
+    const header=c.req.header("Authorization") 
     if(!header){
       return c.json({msg:"Header missing"})
     }
@@ -96,7 +96,18 @@ blogRouter.get('/bulk',async(c)=>{
     const prisma=new PrismaClient({
         datasourceUrl:c.env.DATABASE_URL,
     }).$extends(withAccelerate())
-    const blogs=await prisma.post.findMany()
+    const blogs=await prisma.post.findMany({
+        select:{
+            id:true,
+            title:true,
+            content:true,
+            author:{
+                select:{
+                    name:true
+                }
+            }
+        }
+    })
     return c.json({
         blogs
     })
@@ -112,6 +123,16 @@ blogRouter.get('/:id', async(c) => {
         const blog= await prisma.post.findFirst({
             where:{
                 id:id
+            },
+            select:{
+                id:true,
+                title:true,
+                content:true,
+                author:{
+                    select:{
+                        name:true
+                    }
+                }
             }
         })
         return c.json({
