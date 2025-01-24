@@ -18,7 +18,7 @@ A scalable full-stack blogging platform with a React.js frontend and a Hono back
 
 - React.js
 - TypeScript
-- Tailwind CSS (if used for styling)
+- Tailwind CSS
 
 ### Backend
 
@@ -44,9 +44,10 @@ A scalable full-stack blogging platform with a React.js frontend and a Hono back
    ```bash
    npm install
    ```
-3. Set up environment variables:
-   Create a .env file in the backend directory with the following variables:
+3. Set up environment variables in backend folder:
+   ```bash
    DATABASE_URL=<your-postgresql-database-url>
+   ```
 4. Run the development server:
    ```bash
    npm run dev
