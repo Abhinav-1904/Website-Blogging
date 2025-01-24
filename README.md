@@ -6,12 +6,10 @@ A scalable full-stack blogging platform with a React.js frontend and a Hono back
 
 - **User Authentication**: Secure user login and registration using JWT.
 - **Blog Management**: Create, read, update, and delete (CRUD) blog posts.
-- **Rich Text Editing**: Format blog content with an intuitive text editor.
 - **Data Validation**: Input validation using Zod to ensure data integrity.
-- **Responsive Design**: Optimized for desktop and mobile devices.
 - **Global Deployment**:
-  - Frontend hosted on [Vercel](https://vercel.com).
-  - Backend deployed using [Cloudflare Workers](https://workers.cloudflare.com) for low latency worldwide.
+  - Frontend hosted on [Vercel](https://website-blogging.vercel.app/).
+  - Backend deployed using [Cloudflare Workers](https://backend.abhipandey1904.workers.dev/) for low latency worldwide.
 - **PostgreSQL Database**: Reliable data storage for users and blog content.
 
 ## Tech Stack
