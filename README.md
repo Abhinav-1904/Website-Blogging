@@ -5,7 +5,7 @@ A scalable full-stack blogging platform with a React.js frontend and a Hono back
 ## Features
 
 - **User Authentication**: Secure user login and registration using JWT.
-- **Blog Management**: Create, read, update, and delete (CRUD) blog posts.
+- **Blog Management**: Create, read and update blog posts.
 - **Data Validation**: Input validation using Zod to ensure data integrity.
 - **Global Deployment**:
   - Frontend hosted on [Vercel](https://website-blogging.vercel.app/).
